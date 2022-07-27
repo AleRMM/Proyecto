@@ -7,9 +7,12 @@
     <link rel="shortcut icon" href="/Proyecto/img/favicon.png">
     <link rel="stylesheet" href="/Proyecto/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Pokédex</title>
 </head>
+
 <body>
+
     <header>
         <nav>
             <li>
@@ -23,21 +26,44 @@
             </form>
         </nav>
     </header>
-    <section>
-        <button class="btn-pokedex"><img class="arrow" src="/Proyecto/img/flecha-01.svg">POKÉDEX</button>
-    </section>
+
+
+    <main>
+
+        <div class="adorno">
+            <button class="btn-pokedex"><img class="arrow" src="/Proyecto/img/flecha-01.svg">POKÉDEX</button>
+        </div>
+        
+        <section class="scroll">
+
+                <div class="scroller">
+                    <div id="contenido"></div>
+                    <div id="foto"></div>
+                </div>
+
+        </section>
+
+
+    </main>
+
+
     <footer>
         <div class="btn-bottom">
-            <button>
-                <span><i class="material-icons">chevron left</i></span>
-                <p>N°Pokemon</p>
+            <button class="btn-pknum">
+                <span class="material-symbols-outlined">chevron_left</span>
+                <div id="numero">N°</div>
+                <div id="nombre">Name</div>
             </button>
-            <button><img src=""></button>
-            <button>
-                <span><i class="material-icons">chevron right</i></span>
-                <p>N°Pokemon</p>
+            <img  class="uni" src="/Proyecto/img/pokemonunite.png">
+            <button class="btn-pknum">
+                <div id="numero">N°</div>
+                <div id="nombre">Name</div>
+                <span class="material-symbols-outlined">chevron_right</span>
             </button>
         </div>
     </footer>
+
+    <script></script>
 </body>
+
 </html>
