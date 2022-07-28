@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* ----------  ENCABEZADO ----------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header{
+    background-color: #e13639;
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.light{
+    height: 80px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.arrow{
+    height: 40px;
+    padding-right: 20px;
+}
+
+.adorno{
+    background-image: url(../img/button-01-01.svg);
+    background-repeat: no-repeat;
+    width: 300px;
+}
+
+.btn-pokedex{
+    align-items: center;
+    background: transparent;
+    border: none;
+    display: flex;
+    color: #EFEFEF;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 6px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+button:hover{
+    color: #7cdcff;
+}
+
+form {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+input {
+    height: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    padding: 0 70px 0 15px;
+}
+
+form>div {
+    display: flex;
+    padding: 4px;
+    border-radius: 30px;
+    background: #EFEFEF;
+}
+
+form div input {
+    background: transparent;
+    padding-top: 5px;
+}
+
+span{
+    color: #e13639;
+    padding-left: 10px;
+    font-size: 5px;
+}
+
+/* --------------- CONTENIDO ------------------*/
+
+main{
+    width: 100%;
+    height: 75%;
+}
+
+.scroll{
+    width: 65%;
+    height: 80%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.397), rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0, 0.37);
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 12px;
+    padding: 40px;
+    margin: 20px auto;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 12px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background: #85858577;
+    border-radius: 10px;
+}
+
+
+
+/* ---------  BOTONES EN PIE DE PAGINA ----------- */
+
+footer{
+    background-image: url(../img/footer-01.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 11.8%;
+    width: 100%;
+}
+
+.btn-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-pknum{
+    width: 50%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.numero, .nombre{
+    color: #EFEFEF;
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.material-symbols-outlined {
+    color: #EFEFEF;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.uni{
+    height: 75px;
+}
+
+#foto{
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px){
+
+
+    .btn-pknum{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #numero, #nombre{
+        color: #EFEFEF;
+        font-size: 130%;
+        font-weight: 700;
+    }
+
+}
+
+.bg-azul{
+    background-color: rgba(99, 217, 226, 0.9);
+}
+
+#data-1{
+    border-radius: 10px;
+}
+
+/*-----------Elementos------------*/
+.bg-gris{
+    background-color: #F8F9FA;
+}
+
+.bg-planta{
+    background-color: #9BCC50;
+    color: black;
+}
+
+.bg-oscuro{
+    background-color: rgb(50, 48, 48);
+    color: white;
+}
+
+.bg-veneno{
+    background-color: #B97FC9;
+    color: white;
+}
+
+.bg-fuego{
+    background-color: #FD7D24;
+    color: white;
+}
+
+.bg-agua{
+    background-color: #4592C4;
+    color: white;
+}
+
+.bg-bicho{
+    background-color: #729F3F;
+    color: white;
+}
+
+.bg-volador{
+    background: linear-gradient(#3DC7EF, #BDB9B8);
+    color: black;
+}
+
+.bg-normal{
+    background-color: #A4ACAF;
+    color: black;
+}
+
+.bg-electrico{
+    background-color: #EED535;
+    color: black;
+}
+
+.bg-tierra{
+    background: linear-gradient(#F7DE3F, #AB9842);;
+    color: black;
+}
+
+.bg-hada{
+    background-color: #FDB9E9;
+}
+
+.bg-lucha{
+    background-color: #D56723;
+    color: white;
+}
+
+.bg-psiquico{
+    background-color: #F366B9;
+    color: white;
+}
+
+.bg-roca{
+    background-color: #A38C21;
+    color: white;
+}
+
+.bg-fantasma{
+    background-color: #7B62A3;
+    color: white;
+}
+
+.bg-hielo{
+    background-color: #51C4E7;
+    color: black;
+}
+
+.bg-dragon{
+    background: linear-gradient(#53A4CF, #F16E57);;
+    color: black;
+}
+
+.bg-acero{
+    background-color: #9EB7B8;
+    color: black;
+}
