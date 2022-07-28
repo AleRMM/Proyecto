@@ -14,6 +14,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 header{
@@ -21,7 +22,7 @@ header{
 }
 
 nav{
-    height: 10vh;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -62,6 +63,10 @@ li{
     padding-right: 30px;
 }
 
+button:hover{
+    color: #7cdcff;
+}
+
 form {
     padding-top: 20px;
     padding-right: 30px;
@@ -98,12 +103,12 @@ span{
 
 main{
     width: 100%;
-    height: 75vh;
+    height: 75%;
 }
 
 .scroll{
     width: 65%;
-    height: 600px;
+    height: 80%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.397), rgba(255,255,255,0));
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
@@ -133,7 +138,7 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 15vh;
+    height: 11.8%;
     width: 100%;
 }
 
@@ -144,6 +149,7 @@ footer{
 }
 
 .btn-pknum{
+    width: 50%;
     background: none;
     border: none;
     display: flex;
@@ -155,7 +161,7 @@ footer{
 
 #numero, #nombre{
     color: #EFEFEF;
-    font-size: 1.8rem;
+    font-size: 200%;
     font-weight: 700;
 }
 
@@ -176,6 +182,26 @@ footer{
 }
 
 .uni{
-    height: 135px;
+    height: 75px;
     
+}
+
+#nombre:hover, #numero:hover, .material-symbols-outlined:hover{
+    color: #3dc9fc;
+}
+
+@media screen and (max-width:600px){
+
+
+    .btn-pknum{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #numero, #nombre{
+        color: #EFEFEF;
+        font-size: 130%;
+        font-weight: 700;
+    }
+
 }
